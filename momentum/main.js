@@ -174,11 +174,11 @@ button.addEventListener('click', getQuote);
 
 //IMAGE
 
-const baseNight = '/momentum//image/night/';
-const baseMorning = '/momentum//image/morning/';
-const baseDay = '/momentum//image/day/';
-const baseEvening = '/momentum//image/evening/';
-const baseAll = '/momentum//image/';
+const baseNight = '/momentum/image/night/';
+const baseMorning = '/momentum/image/morning/';
+const baseDay = '/momentum/image/day/';
+const baseEvening = '/momentum/image/evening/';
+const baseAll = '/momentum/image/';
 
 const images = [
     "01.jpg",
