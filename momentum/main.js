@@ -29,9 +29,6 @@ function showTime() {
 
 
     time.innerHTML = `${hour}<span>:</span>${addZero(min)}<span>:</span>${addZero(sec)}`;
-    // if (min === 00 && sec === 00) {
-    //     getImage()
-    // }
     setTimeout(showTime, 1000);
 }
 
@@ -177,11 +174,11 @@ button.addEventListener('click', getQuote);
 
 //IMAGE
 
-const baseNight = '/vladlenaveligan-JS2020Q3/momentum//image/night/';
-const baseMorning = '/vladlenaveligan-JS2020Q3/momentum//image/morning/';
-const baseDay = '/vladlenaveligan-JS2020Q3/momentum//image/day/';
-const baseEvening = '/vladlenaveligan-JS2020Q3/momentum//image/evening/';
-const baseAll = '/vladlenaveligan-JS2020Q3/momentum//image/';
+const baseNight = '/momentum//image/night/';
+const baseMorning = '/momentum//image/morning/';
+const baseDay = '/momentum//image/day/';
+const baseEvening = '/momentum//image/evening/';
+const baseAll = '/momentum//image/';
 
 const images = [
     "01.jpg",

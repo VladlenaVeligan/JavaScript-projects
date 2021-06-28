@@ -117,7 +117,7 @@ function generateMainCards() {
     for (let i = 0; i < cardTitle.length; i++) {
         translateButton[i].innerHTML = "";
         cardTitle[i].innerHTML = categoryName[i];
-        cardImage[i].src = `/vladlenaveligan-JS2020Q3/english-for-kids/assets/category/${imageForCard[i]}.png`;
+        cardImage[i].src = `/english-for-kids/assets/category/${imageForCard[i]}.png`;
         cardAudio[i].src = "";
     }
 
