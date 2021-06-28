@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,=">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>gem-puzzle</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <ul class="main-menu">
+                <li class="link-menu newgame">New Game</li>
+            </ul>
+        </div>
+
+        <audio id=sound>
+            <source src="assets/sound/zvuk.mp3">
+        </audio>
+
+        <ul class="fieldsize-selected">
+            <li class="button three-field">3 x 3</li>
+            <li class="button four-field">4 x 4</li>
+            <li class="button five-field">5 x 5</li>
+        </ul>
+
+
+        <div class="game-area">
+            <div class="nav">
+                <time class="time"></time>
+                <div class="move">moves: </div>
+            </div>
+
+
+            <div class="field"></div>
+        </div>
+
+        <div class="bg-popup">
+            <div class="popup-content">
+                <p class="congratulation"></p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

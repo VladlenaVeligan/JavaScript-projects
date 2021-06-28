@@ -1,0 +1,489 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    margin: auto;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, ul, p, section, img, nav{
+    margin: 0;
+}
+
+.wrapper{
+    margin: auto;
+    max-width: 1600px;
+}
+/************ заголовки ************/
+h1{
+color: black;
+}
+
+h2{
+padding: 0;    
+font-weight: bold;
+font-size: 64px;
+line-height: 75px;
+letter-spacing: 4.5px;
+text-transform: uppercase;
+margin: auto;
+}
+
+h3{
+margin: auto;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #373737;
+}
+
+h4{
+margin: auto;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 2.4px;
+text-transform: uppercase;
+color: #373737;
+}
+
+.first_paragraph{
+width: 504px;
+height: 50px;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+margin: auto;
+padding: 20px 0 30px 0;
+}
+
+.grey_paragraph{
+    margin: auto;
+    line-height: 20px;
+    color: #4E4E4E;
+    padding: 0;
+}
+
+li:last-child{
+    padding: 0;
+}
+
+.background{
+    background-image: url(assets/first-screen/bg-image.png);
+    height: 744px;
+    width: 1600px;
+}
+
+/************ Header ************/
+
+header{
+    margin: auto;
+    background-color: black;
+    height: 96px;
+    display: flex;
+    padding-right: 109px;
+}
+
+.active{
+    color:rgba(255,255,255,1);
+    font-weight: 500;
+    border-bottom: 1px solid white;
+    line-height: 42px;
+}
+
+.navigation{
+    padding: 0;
+    color:rgba(255,255,255,0.8);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-link{
+    list-style: none;
+    text-align: center;
+    padding: 0 90px 0 0;
+}
+
+.navigation-link:hover{
+    cursor: pointer;
+}
+
+/************ Your Life ************/
+
+ .first-screen_wrapper{
+    height: 649px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__first{
+    width: 734px;
+    height: 424px;
+    position: absolute;
+    color: white;
+    padding: 132px 0 90px 4px;
+    
+}
+
+.button__screen{
+    text-align: center;
+    padding: 0 0 183px 0;
+}
+
+.button_colored{
+    line-height: 16px;
+    padding: 0;
+    height: 46px;
+    width: 184px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #00AFDB;
+    position: static;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+    outline: none;
+}
+
+.button_colored:hover{
+    background-color:#009CC2;
+}
+
+.social-media{
+    width: 170px;
+    height: 20px;
+    margin: auto;
+}
+
+.social-media_icon{
+    padding: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media_location{
+    list-style: none;
+    padding: 0 30px 0 0;
+} 
+
+.social-media_location:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/************ Rappresent ************/
+
+.second-screen_wrapper{
+    width: 1062px;
+    padding: 120px 0px 140px 14px;
+    text-align: left;
+}
+.layout-2-column{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.layout-2-column__content{
+    width: 407px;
+    height: 233px;
+}
+
+.second-h3{
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.button__second-screen{
+    text-align: left;
+    padding-top: 30px;
+}
+
+.layout-2-column__image{
+    width: 407px;
+    height: 582px;
+}
+
+
+
+/************ Our Community ************/
+
+.third-screen{
+    background-color: #F5F6F7;
+    width: 1600px;
+    height: 504px;
+}
+
+.third-screen_wrapper{
+    margin: auto;
+    width: 1062px;
+}
+.overflow{
+    overflow: hidden;
+    width: 894px;
+    height: 244px;
+    border: none;
+}
+.slider-img_scrol{   
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 1707px;
+    left: 707px;
+    padding: 0;
+}
+
+.slider-img_scrol>li:last-child{
+    padding: 0;
+}
+
+.slider-img_location{
+    list-style: none;
+    text-align: center;
+    padding: 0 30px 0 0;
+    animation-delay: 5s;
+} 
+
+.number{
+    color: #373737;
+    font-size: 18px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.layout-2-column__slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.arrow:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.layout-2-column-third{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 82px 0 174px 0;
+}
+
+.layout-2-column__third-content{
+    padding-top: 73px;
+    width: 298px;   
+    height: 175px;
+    text-align: center;
+
+}
+
+.content_ico{
+    padding-bottom: 18px;
+}
+
+.third-h4{
+    padding: 0 0px 10px 2px;
+}
+
+/************ Implement ************/
+
+.fourth-screen_wrapper{
+    width: 1062px;
+    padding: 120px 0px 140px 14px;
+}
+
+.fourth-h3{
+    padding-bottom: 20px;
+}
+
+.layout-2-column-fourth{
+    display: flex;
+    justify-self: start;
+    align-items: center;
+}
+
+.layout-2-column__content-fourth{
+    padding-left: 139px;
+}
+
+/************ Sign Up ************/
+
+.fifth-screen_wrapper{
+    background-image: url(assets/fifth-screen/pexels-christina-morillo-1181675\ 1.png);
+    width: 1600px;
+    height: 524px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_for_email{
+    border: 0;
+    text-align: center;
+    width: 406px;
+    height: 104px;
+    position: absolute;
+    padding: 200px 0 220px 0;
+}
+
+.form::placeholder {
+    color: rgba(55, 55, 55, 0.5);
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+.fifth-h3{
+    color: white;
+    padding: 0 0 30px 0;
+}
+
+.form{
+    width: 340px;
+    height: 44px;
+    border: none;
+    padding-left: 24px;
+    outline: none;
+}
+
+.fifth-button{
+    width: 72px;
+    height: 46px;
+    border-radius: 0px;
+}
+
+/************ Download ************/
+
+.sixth-screen{
+    background-color: #F5F6F7;
+    width: 1600px;
+    height: 464px;
+}
+
+.sixth-screen_wrapper{
+    margin: auto;
+    width: 1062px;
+}
+
+.content__sixth{
+    margin: auto;
+    width: 480px;
+    height: 164px;
+    text-align: center; 
+    padding: 120px 0 180px 0;
+}
+
+.sixth-h3{
+    color: #373737;
+    padding: 0 0 20px 0;
+}
+
+.button_group{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding: 30px 0 0 0; 
+}
+
+.download{
+    width: 127px;
+    height: 46px;
+}
+
+.border_icon{
+    padding: 0px 30px 0 0;
+}
+
+.android:last-child{
+    padding: 0;
+}
+
+.border_icon:hover{
+    cursor: pointer;
+}
+
+/************ Footer ************/
+
+.footer{
+    background-color: black;
+    width: 1600px;
+    height: 185px;
+}
+
+.footer_wrapper{
+    margin: auto;
+}
+
+.footer_inform{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 160px 80px 160px; 
+}
+
+.footer-list{
+    font-size: 14px;
+    line-height: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: end; 
+    padding: 0 20px  0 0; 
+    color: white;
+}
+
+.footer-list>li:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.footer-list:last-child{
+    padding: 0;
+}
+
+.inform{
+    list-style: none;
+    padding: 0 20px 0 0;
+}
+
+.confidentiality{
+    color: #818181;
+}
+
+.confidentiality:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.footer-logo{
+    padding: 0 69px 0 0;
+}
+
+
+

@@ -1,0 +1,228 @@
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                transition: background-image 1s ease-in-out;
+            }
+            
+            .wrapper {
+                max-width: 70rem;
+                color: white;
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+            }
+            
+            #name,
+            .focus,
+            .city {
+                display: inline-block;
+            }
+            
+            .weather-slider_position {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .weather {
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 1rem;
+                font-style: italic;
+                font-weight: 300;
+                opacity: 0.9;
+                letter-spacing: 0.07rem;
+                text-align: start;
+                margin-top: 1rem;
+                padding: 0.7rem;
+                /* margin-bottom: 2rem; */
+            }
+            
+            .city:focus {
+                outline: none;
+                border-style: none;
+                border-bottom: 1px solid rgba(250, 250, 250, 0.7);
+            }
+            
+            .btn {
+                width: 5rem;
+                height: 5rem;
+                border-style: none;
+                background: transparent;
+            }
+            
+            .btn:hover {
+                cursor: pointer;
+                outline: none;
+                border-style: none;
+                opacity: 0.7;
+                filter: grayscale(.8);
+            }
+            
+            .btn:active,
+            .btn:focus {
+                outline: 0;
+            }
+            
+            .btn:active {
+                transform: scale(1.02)
+            }
+            
+            .clock {
+                background-color: rgba(0, 0, 0, 0.3);
+                border-radius: 4rem;
+                padding: 1rem;
+            }
+            
+            #time {
+                font-size: 7rem;
+                font-weight: normal;
+                letter-spacing: 0.08rem;
+            }
+            
+            #date {
+                font-size: 3rem;
+                letter-spacing: 0.1rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+            
+            .greeting_phrase {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            #greeting,
+            #name {
+                font-size: 3rem;
+                letter-spacing: 0.08rem;
+            }
+            
+            .focus:focus,
+            #name:focus {
+                padding-bottom: 5px;
+                outline: none;
+                border-style: none;
+                border-bottom: 1px solid rgba(250, 250, 250, 0.7);
+            }
+            
+            .button {
+                display: flex;
+                justify-content: center;
+                background: transparent;
+                border-style: none;
+            }
+            
+            .focus_today {
+                padding-bottom: 2rem;
+            }
+            
+            .refresh {
+                width: 3rem;
+                height: 3rem;
+            }
+            
+            .button:hover {
+                cursor: pointer;
+                outline: none;
+                border-style: none;
+                opacity: 0.7;
+                filter: grayscale(.8);
+            }
+            
+            .button:active,
+            .button:focus {
+                outline: 0;
+            }
+            
+            .button:active {
+                transform: scale(1.02)
+            }
+            
+            .quote,
+            .author {
+                border-radius: 0.5rem;
+                font-size: 1rem;
+                font-style: italic;
+            }
+            
+            .quote-bg {
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 1rem;
+                padding: 1rem;
+            }
+            
+            .author {
+                text-align: end;
+                font-weight: 400;
+            }
+            
+            .quote {
+                font-weight: 300;
+            }
+            
+            @media (max-width: 700px) {
+                .weather-slider_position {
+                    align-items: flex-start;
+                }
+                .btn {
+                    margin-top: 1.5rem;
+                }
+                #time {
+                    font-size: 4rem;
+                }
+                #date {
+                    font-size: 2rem;
+                }
+                #greeting,
+                #name {
+                    font-size: 2.5rem;
+                }
+                .btn {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+            
+            @media (max-width: 450px) {
+                #time {
+                    font-size: 3rem;
+                }
+                #date {
+                    font-size: 1.8rem;
+                    padding: 0;
+                }
+                .clock {
+                    padding: 0;
+                }
+                #greeting,
+                #name {
+                    font-size: 2rem;
+                }
+                .btn {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+            
+            @media (max-width: 355px) {
+                #greeting,
+                #name {
+                    font-size: 1.3rem;
+                }
+                #date {
+                    font-size: 1.5rem;
+                    padding: 0;
+                }
+            }

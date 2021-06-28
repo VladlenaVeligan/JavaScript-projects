@@ -1,0 +1,177 @@
+body {
+    background-image: url(/vladlenaveligan-JS2020Q3/english-for-kids/assets/bg/bg.jpg);
+    background-size: contain;
+    overflow: hidden;
+    font-family: 'Nanum Pen Script' !important;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 1) !important;
+    color: rgb(255, 195, 69) !important;
+    font-size: 1.5rem !important;
+}
+
+.btn-burger {
+    z-index: 1100 !important;
+}
+
+.btn-outline-warning {
+    background-color: transparent !important;
+}
+
+.btn-outline-warning:hover {
+    background-color: rgb(255, 195, 69) !important;
+    color: white !important;
+}
+
+.btn-secondary {
+    border-color: rgb(255, 195, 69) !important;
+    box-shadow: none !important;
+}
+
+.active {
+    background-color: rgb(255, 195, 69) !important;
+    color: white !important;
+    border: rgb(255, 195, 69) !important;
+}
+
+.active:hover,
+.btn-secondary:hover,
+.first-button:hover,
+.navbar-text:hover,
+.rs-logo:hover,
+.burger-menu-link:hover {
+    text-shadow: 3px 3px 3px rgba(107, 107, 107, 0.5), -3px 3px 3px rgba(107, 107, 107, 0.5) !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 8px 5px rgba(107, 107, 107, 0.2), -5px 5px 8px 5px rgba(107, 107, 107, 0.2) !important;
+}
+
+.material-icons {
+    color: rgb(255, 195, 69);
+    font-size: 2rem !important;
+    transition: all 0.9s linear;
+}
+
+.col {
+    margin-top: 1rem;
+}
+
+.footer {
+    background: #F34723;
+}
+
+.navbar-text {
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.burger-menu {
+    position: absolute;
+    background-color: #F34723;
+    width: 20%;
+    height: 100vh;
+    z-index: 1000;
+}
+
+.hidden {
+    left: -20%;
+    transition: all 0.4s linear;
+}
+
+.visible {
+    left: 0;
+    transition: all 0.4s linear;
+}
+
+.overlay-visible {
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    height: 100vh;
+    z-index: 1000;
+    transition: all 0.3s linear;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger-menu-link {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-category {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.btn-hidden {
+    visibility: hidden !important;
+}
+
+.btn-visible {
+    visibility: visible !important;
+}
+
+.btn-start {
+    background-color: rgb(255, 195, 69) !important;
+    border-color: rgb(255, 195, 69) !important;
+    color: white !important;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1000px) {
+    .content {
+        height: auto;
+    }
+    .row {
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+    .col {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .hidden {
+        left: -40%;
+    }
+    .burger-menu {
+        width: 40%;
+    }
+    .overlay-visible {
+        left: 40%;
+    }
+}

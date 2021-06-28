@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 40%;
+}
+
+.link-menu {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+    list-style-type: none;
+}
+
+.fieldsize-selected {
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-menu:hover {
+    cursor: pointer;
+    text-shadow: 2px 2px 2px silver, -2px 2px 2px silver;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.time {
+    width: 90px;
+    height: 40px;
+}
+
+.fieldsize-selected {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.field {
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    width: 25rem;
+    height: 25rem;
+    background-color: rgb(207, 157, 218);
+    border: 2px solid rgb(226, 196, 243);
+    border-radius: 0.7rem;
+}
+
+.cell {
+    position: absolute;
+    box-sizing: border-box;
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: rgb(226, 196, 243);
+    border-radius: 0.7rem;
+    font-family: 'Indie Flower', cursive;
+    background-size: 100px;
+    font-size: 4rem;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: url('/icon/click.svg'), pointer;
+}
+
+.bg-popup {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+.popup-content {
+    width: 550px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.5rem;
+    background-color: white;
+}
+
+.button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.3rem;
+    color: white;
+    background-color: rgb(145, 85, 206);
+    border-style: none;
+    margin-top: 0.7rem;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.congratulation {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1rem;
+}
+
+.button:active {
+    outline: none;
+    background-color: rgb(182, 122, 243);
+    transition: all 0.2s;
+}
+
+.button:focus {
+    outline: none;
+}
+
+@media (max-width: 850px) {
+    .button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .fieldsize-selected {
+        width: 60%;
+    }
+    .menu {
+        width: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+    .fieldsize-selected {
+        width: 90%;
+    }
+    .menu {
+        width: 90%;
+    }
+}
