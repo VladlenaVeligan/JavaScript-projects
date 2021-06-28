@@ -1,12 +1,25 @@
-Follow the links below
+## *Follow the links below* 
 
-Calculator
+# **Calculator**  
+
 https://vladlenaveligan.github.io/JavaScript-projects/calculator/
-Gem puzzle
+____
+
+#  **Gem puzzle**  
+
 https://vladlenaveligan.github.io/JavaScript-projects/gem-puzzle/
-English for kids
+____
+
+# **English for kids**  
+
 https://vladlenaveligan.github.io/JavaScript-projects/english-for-kids/
-Momentum
+____
+
+# **Momentum**  
+
 https://vladlenaveligan.github.io/JavaScript-projects/momentum/
-WebDev
+____
+
+# **WebDev**  
+
 https://vladlenaveligan.github.io/JavaScript-projects/webdev/
