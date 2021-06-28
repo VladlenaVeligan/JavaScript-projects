@@ -24,12 +24,6 @@ cells.push(empty);
 let numberOfSteps = 0;
 let quantityMoves = 1;
 
-
-alert(
-    "Привет! Для проверки вывода сообщения в конце игры, через f12 закомментируй строку номер 82 в файле script.js"
-);
-
-
 /*** MOVE PUZZLE ***/
 
 function movePuzzle(index) {
