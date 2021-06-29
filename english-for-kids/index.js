@@ -117,7 +117,7 @@ function generateMainCards() {
     for (let i = 0; i < cardTitle.length; i++) {
         translateButton[i].innerHTML = "";
         cardTitle[i].innerHTML = categoryName[i];
-        cardImage[i].src = `/english-for-kids/assets/category/${imageForCard[i]}.png`;
+        cardImage[i].src = `../english-for-kids/assets/category/${imageForCard[i]}.png`;
         cardAudio[i].src = "";
     }
 
@@ -676,8 +676,8 @@ function createContentCards(categoryArr, folderName) {
         translateButton[i].innerHTML = "360";
 
         cardTitle[i].innerHTML = categoryName[i];
-        cardImage[i].src = `/english-for-kids/assets/${folderName}/${imageForCard[i]}.png`;
-        cardAudio[i].src = `/english-for-kids/assets/${folderName}/audio/${audioForCard[i]}.mp3`;
+        cardImage[i].src = `../english-for-kids/assets/${folderName}/${imageForCard[i]}.png`;
+        cardAudio[i].src = `../english-for-kids/assets/${folderName}/audio/${audioForCard[i]}.mp3`;
 
         card[i].addEventListener("click", () => {
             cardAudio[i].play();
